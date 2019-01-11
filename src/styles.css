@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Page styling
+================================== */
+@import url(https://fonts.googleapis.com/css?family=Lora);
+html { 
+  height: 100%;
+  background-color: #EEE; 
+}
+body {
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 800px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2em;
+  background-color: white;
+  border: double 3px #DDD;
+  border-top: none; border-bottom: none;
+}
+h1, h2, h3, h4, h5, h6 { margin-top: 0; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1em; }
+strong { color: darken(slategrey,20%); }

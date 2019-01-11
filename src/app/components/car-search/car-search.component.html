@@ -1,0 +1,38 @@
+
+<div id="car-search-component">
+  <div class="container">
+    <form>
+
+      <!-- SEARCH INPUT -->
+      <div class="searchbox">
+        <span class="icon"><i class="fa fa-lg fa-search"></i></span>
+        <input class="search" placeholder="{{searchPlaceholder}}" [formControl]="searchField" />
+      </div>
+
+      <br><br>
+
+      <div *ngIf="count">
+          <span>Cars: {{count}}</span>
+      </div>
+
+      <!-- Missions Table -->
+      <table class="search-result" *ngIf="cars$">
+          <thead>
+              <th>Car Name</th>
+              <th>Acceleration</th>
+              <th>Horsepower</th>
+              <th>Year</th>
+          </thead>
+          <tbody>
+              <tr *ngFor="let car of cars$ | async">
+                  <td>{{car.name}}</td>
+                  <td>{{car.acceleration}}</td>                 
+                  <td>{{car.horsepower}}</td>
+                  <td>{{car.year}}</td>
+              </tr>
+          </tbody>
+      </table>
+
+    </form>
+  </div>
+</div>
