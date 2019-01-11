@@ -122,3 +122,4 @@ Example:
 
 - https://angular.io/guide/quickstart (Starting with Angular)
 - https://angular.io/guide/architecture (Architecture Guide)
+- https://github.com/vega/vega/blob/master/docs/data/cars.json ( see https://github.com/vega/vega/blob/master/LICENSE for usage)
